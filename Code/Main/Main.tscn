@@ -18,6 +18,12 @@ position = Vector2(191, 229)
 [node name="Rock" parent="." unique_id=1562607405 instance=ExtResource("4_hh5pf")]
 position = Vector2(188, 127)
 
+[node name="Rock3" parent="." unique_id=1130840579 instance=ExtResource("4_hh5pf")]
+position = Vector2(188, 127)
+
+[node name="Rock2" parent="." unique_id=1392760866 instance=ExtResource("4_hh5pf")]
+position = Vector2(188, 127)
+
 [node name="UFO" parent="." unique_id=65172672 instance=ExtResource("5_qg80j")]
 position = Vector2(290, 273)
 
