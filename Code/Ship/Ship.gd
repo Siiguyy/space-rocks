@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 		fire()
 
 
-	if Input.is_action_just_pressed("turn_ccw"):
+	if Input.is_action_pressed("turn_ccw"):
 		rotation_degrees -= turn_speed * delta 
 
 	if Input.is_action_pressed("turn_cw"):
@@ -28,7 +28,10 @@ func _physics_process(delta: float) -> void:
 	# snake like movement.
 		velocity.x += cos(rotation - PI/2) * thrust_power 
 		velocity.y += sin(rotation - PI/2) * thrust_power
-
+	var c: float = 1000
+	#TODO: Fix max velocity 
+	#velocity = velocity.clamp(Vector2(-c, c), Vector2(-c, c))
+	
 
 	position += velocity * delta
 
