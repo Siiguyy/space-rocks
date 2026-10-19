@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dhmmlqnos0d8n"]
+
+[ext_resource type="Script" uid="uid://dansvaa3darfj" path="res://Ship/Ship.gd" id="1_11244"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k6j7c"]
+
+[node name="Ship" type="Area2D" unique_id=1199813585]
+script = ExtResource("1_11244")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=347153638]
+position = Vector2(0, 16)
+shape = SubResource("CapsuleShape2D_k6j7c")

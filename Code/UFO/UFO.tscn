@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://biehskg2qpme5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74ghb"]
+size = Vector2(14.75, 38.25)
+
+[node name="UFO" type="Area2D" unique_id=65172672]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1716927648]
+position = Vector2(-17, -1)
+shape = SubResource("RectangleShape2D_74ghb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1865239366]
+position = Vector2(28, -7)
+shape = SubResource("RectangleShape2D_74ghb")

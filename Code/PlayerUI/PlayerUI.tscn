@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://s2abnxf5ptfw"]
+
+[node name="PlayerUI" type="PanelContainer" unique_id=1387524824]
+anchors_preset = -1
+anchor_right = 1.0170001
+anchor_bottom = 0.135
+offset_left = 140.0
+offset_right = -175.50003
+offset_bottom = -40.000008
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=1850406671]
+layout_mode = 2
+
+[node name="ScoreUI" type="Label" parent="VBox" unique_id=1094119574]
+layout_mode = 2
+text = "0123456789"
+
+[node name="HBox" type="HBoxContainer" parent="VBox" unique_id=734636810]
+layout_mode = 2
+
+[node name="Life" type="TextureRect" parent="VBox/HBox" unique_id=145340547]
+layout_mode = 2
