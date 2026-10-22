@@ -28,3 +28,5 @@ position = Vector2(188, 127)
 position = Vector2(290, 273)
 
 [node name="PlayerUI" parent="." unique_id=1387524824 instance=ExtResource("6_u2i7p")]
+
+[node name="UfoTimer" type="Timer" parent="." unique_id=1633435863]

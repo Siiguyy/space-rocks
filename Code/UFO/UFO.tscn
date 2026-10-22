@@ -30,3 +30,5 @@ shape = SubResource("CapsuleShape2D_74ghb")
 [node name="Ufo" type="AnimatedSprite2D" parent="." unique_id=1218489382]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_74ghb")
+
+[node name="FireTimer" type="Timer" parent="." unique_id=46793903]
