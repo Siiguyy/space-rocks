@@ -1,14 +1,32 @@
 [gd_scene format=3 uid="uid://biehskg2qpme5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_74ghb"]
-size = Vector2(14.75, 38.25)
+[ext_resource type="Script" uid="uid://cilukiebm07cc" path="res://UFO/UFO.gd" id="1_7cik0"]
+[ext_resource type="Texture2D" uid="uid://cikssq0idqrlp" path="res://UFO/Assets/UFO_a.png" id="2_dw4pw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_74ghb"]
+radius = 12.0
+height = 34.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_74ghb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dw4pw")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="UFO" type="Area2D" unique_id=65172672]
+script = ExtResource("1_7cik0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1716927648]
-position = Vector2(-17, -1)
-shape = SubResource("RectangleShape2D_74ghb")
+[node name="Timer" type="Timer" parent="." unique_id=1184964107]
+autostart = true
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1865239366]
-position = Vector2(28, -7)
-shape = SubResource("RectangleShape2D_74ghb")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1546170166]
+shape = SubResource("CapsuleShape2D_74ghb")
+
+[node name="Ufo" type="AnimatedSprite2D" parent="." unique_id=1218489382]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_74ghb")

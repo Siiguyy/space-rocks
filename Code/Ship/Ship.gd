@@ -13,7 +13,7 @@ var velocity: Vector2 =  Vector2.ZERO
 
 func _physics_process(delta: float) -> void:
 	super._process(delta)
-	if Input.is_action_pressed("fire"):
+	if Input.is_action_just_pressed("fire"):
 		fire()
 
 
@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 
 
 	if Input.is_action_pressed("thrust"):
+		
 	# snake like movement.
 		velocity.x += cos(rotation - PI/2) * thrust_power 
 		velocity.y += sin(rotation - PI/2) * thrust_power
@@ -41,8 +42,6 @@ func _physics_process(delta: float) -> void:
 
 
 # TODO: move to Main?
- 	#if Input.is_action_pressed("pause"):
-		#get_tree(). paused = true 
 
 
 

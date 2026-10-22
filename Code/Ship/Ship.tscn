@@ -1,12 +1,32 @@
 [gd_scene format=3 uid="uid://dhmmlqnos0d8n"]
 
 [ext_resource type="Script" uid="uid://dansvaa3darfj" path="res://Ship/Ship.gd" id="1_11244"]
+[ext_resource type="Texture2D" uid="uid://cm1edrpcflwgi" path="res://Ship/Assets/Ship_a.png" id="2_2s2wp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k6j7c"]
+radius = 13.0
+height = 26.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k6j7c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2s2wp")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Ship" type="Area2D" unique_id=1199813585]
 script = ExtResource("1_11244")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=347153638]
-position = Vector2(0, 16)
+position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_k6j7c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=579079618]
+texture_filter = 1
+position = Vector2(2.3841858e-07, -1.1920929e-07)
+scale = Vector2(1.375, 1.1875)
+sprite_frames = SubResource("SpriteFrames_k6j7c")

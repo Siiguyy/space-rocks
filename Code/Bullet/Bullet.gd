@@ -1,7 +1,7 @@
 extends ScreenWrapper
 class_name Bullet 
 
-var speed: float = 60 # px / sec.
+var speed: float = 120 # px / sec.
 var lifespan: float = 2.0 # seconds till end.
 
 
